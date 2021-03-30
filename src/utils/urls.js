@@ -1,4 +1,4 @@
-export const baseUrl = "http://localhost:5000"
+export const baseUrl = "https://serene-coast-48146.herokuapp.com/"
 
 export const categories = [
     "Business‎",

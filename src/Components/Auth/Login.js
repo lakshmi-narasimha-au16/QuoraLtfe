@@ -32,9 +32,7 @@ function Login(props) {
                 data: JSON.stringify(user),
                 headers:{
                     "Content-Type": "application/json",
-                    "Access-Control-Allow-Origin": "http://localhost:5000"
-                },
-                credentials:"include"
+                }
             }
             if(!errors.name|| !errors.email){
                 axios(axiosConfig)
