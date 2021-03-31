@@ -1,18 +1,18 @@
 import { baseUrl } from '../utils/urls'
 
 
-const profile_url = baseUrl+'/auth/profile'
+const profile_url = baseUrl +'/auth/profile'
 
 
 const AuthStatus = async()=>{
     const options={
-        mode:"cors",
         headers: {
             "Content-Type": "application/json",
-            "Access-Control-Allow-Origin": "https://serene-coast-48146.herokuapp.com/"
+            "Access-Control-Allow-Origin": baseUrl,
         },
-        credentials:"include"
+        credentials:"include",
       };
+      console.log(options)
     const data = await fetch(profile_url,options)
         .then((res)=>res.json())
         .then(data=>data)
